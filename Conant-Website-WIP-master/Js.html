@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto+Mono" rel="stylesheet">
+
+<title>Conant Comp Sci</title>
+<link rel="icon" href="resources/logo.png">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myScript.js"></script>
+<link rel="stylesheet" href="css/mainPageStyle.css">
+
+
+
+<!--Things to talk about in the main page:
+    Java
+    Why use java
+    Stats on Java
+    OOP
+    Java vs JavaFX
+    Netbeans IDE
+    More IDEs that are popular
+    
+-->
+
+
+<body>
+    
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;margin-top:19px;padding-top:25px;padding-bottom:40px;display:block;left:-300px" id="mySidebar">
+        <a href="Java.html" class="w3-bar-item w3-button active-cyan hover-cyan">Java</a>
+        <a href="Java/JavaOutput.html" class="w3-bar-item w3-button hover-cyan">Output</a><!-- maybe NetBeans -->
+        <a href="Java/JavaVariables.html" class="w3-bar-item w3-button hover-cyan">Variables</a>
+        <a href="Java/JavaConditionals.html" class="w3-bar-item w3-button hover-cyan">Conditionals</a>
+        <a href="Java/JavaJOP.html" class="w3-bar-item w3-button hover-cyan">JOP</a>
+        <a href="Java/JavaOperators.html" class="w3-bar-item w3-button hover-cyan">Operators</a>
+        <a href="Java/JavaMethods.html" class="w3-bar-item w3-button hover-cyan">Methods</a>
+        <a href="Java/JavaInstanceFields.html" class="w3-bar-item w3-button hover-cyan">Instance Fields</a>
+        <a href="Java/JavaParameters.html" class="w3-bar-item w3-button hover-cyan">Parameters</a>
+        <a href="Java/JavaCasting.html" class="w3-bar-item w3-button hover-cyan">Casting</a>
+        <a href="Java/JavaObjects.html" class="w3-bar-item w3-button hover-cyan">Objects</a>
+        <a href="Java/JavaRectangleClass.html" class="w3-bar-item w3-button hover-cyan">Rectangle Class</a>
+        <a href="Java/JavaStringClass.html" class="w3-bar-item w3-button hover-cyan">String Class</a>
+        <a href="Java/JavaBooleans.html" class="w3-bar-item w3-button hover-cyan">Booleans</a><!-- should include end of Q1?-->
+        
+        <a href="Java/JavaLoops.html" class="w3-bar-item w3-button hover-cyan">Loops</a>
+        <a href="Java/JavaArray.html" class="w3-bar-item w3-button hover-cyan">Array</a>
+        <a href="Java/JavaArrayList.html" class="w3-bar-item w3-button hover-cyan">Array List</a>
+        <a href="Java/Java2DArray.html" class="w3-bar-item w3-button hover-cyan">2-D Arrays</a>
+        <a href="Java/JavaKeyPress.html" class="w3-bar-item w3-button hover-cyan">KeyPress</a><!-- should include end of Q1?-->
+        
+        <a href="Java/JavaSearching.html" class="w3-bar-item w3-button hover-cyan">Searching</a>
+        <a href="Java/JavaSorting.html" class="w3-bar-item w3-button hover-cyan">Sorting</a>
+        <a href="Java/JavaIO.html" class="w3-bar-item w3-button hover-cyan">Input and Output</a>
+        <a href="Java/JavaInheritance.html" class="w3-bar-item w3-button hover-cyan">Inheritance</a>
+        <a href="Java/JavaPolymorphism.html" class="w3-bar-item w3-button hover-cyan">Polymorphism</a>
+        <a href="Java/JavaEncapsulation.html" class="w3-bar-item w3-button hover-cyan">Encapsulation</a>
+        <a href="Java/JavaInterface.html" class="w3-bar-item w3-button hover-cyan">Interface</a>
+        <!--<a href="../Java/JavaNetworking" class="w3-bar-item w3-button">Networking</a>-->
+        <a href="Java/JavaAPMC.html" class="w3-bar-item w3-button hover-cyan">AP MC</a>
+        <a href="Java/JavaAPFRQ.html" class="w3-bar-item w3-button hover-cyan">AP FRQ's</a>
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+    </div>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;text-align:center">
+
+    <div class="w3-bar w3-card-2 w3-right w3-large " style="background-color: rgb(65,209,175);text-align:center!important">
+        <button class="w3-bar-item w3-button w3-align-left w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" id="sidebar-button" onclick="w3_open()"><i class="fa fa-angle-double-right" id="sidebar-icon" aria-hidden="true"></i></button>
+
+        <p class="w3-bar-item bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>
+        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="APReview.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>
+        <a href="Java.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Java</a>
+        <a href="Html5.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>
+        <a href="Vb.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="Vb.html" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+        <a href="Html5.html" class="w3-bar-item w3-button w3-padding-large">Principles</a>
+        <a href="Java.html" class="w3-bar-item w3-button w3-padding-large">Java</a>
+        <a href="APReview.html" class="w3-bar-item w3-button w3-padding-large">AP Review</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="">
+    <header class="w3-container w3-center left-margin" style="padding:60px 16px 11px; background-color: rgba(255,255,255,0.5)">
+
+        <!--<img class="background-image" src="resources/backg.png" >-->
+
+        <p class="w3-margin header-title"  style="line-height: 60px;color:black;z-index:1;">Javascript</p>
+        <!--<p class="quote" style=""><i>"There are 10 types of people in this world, those who understand binary and those who don't"</i></p>-->
+        <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
+
+    <!--<form>-->
+        <!--<div style="width: 130px;margin:auto;">-->
+    <!--      <input class="input-search" type="text" name="search" style="" placeholder="Search..." >-->
+          <!--<i class="fa fa-search" style="font-size:24px"></i>-->
+        <!--</div>-->
+        
+    <!--</form>-->
+    
+    </header>
+</div>
+
+<!-- JAVA? -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>What is Javascript?</h1>
+            <!--<h5 class="w3-padding-32" style="">Java is a programming language which is used all over the world.-->
+            <!--According to <a target="_blank" href="https://go.java/index.html">Java's website</a>, over <strong>5 million</strong> students study Java, there are <strong>10 million</strong> Java developers worldwide,-->
+            <!--and over <strong>15 billion</strong> devices run Java.</h5>-->
+            
+            <h5 class="w3-padding-32" style="">
+                Javascript is an object-oriented computer programming language commonly used to create interactive effects within web browsers.
+            </h5>
+
+     
+        </div>
+
+        
+    </div>
+</div>
+
+<!-- JAVA versions -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px 50px 0px">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Is Javascript the same as Java</h1>
+            <h5 class="w3-padding-32" style="">
+                No, they are two completely different computer languages. Only their names are similar. If you want to learn about Java instead, we have a whole other resource section on Java.    
+            </h5>
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+<!-- OOP? -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+    
+
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Why learn Javascript?</h1>
+            <h5 class="w3-padding-32">JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages</h5>
+
+           
+        </div>
+    </div>
+</div>
+<!-- JAVA versions -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px 50px 0px">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Javascript is not compiled</h1>
+            <h5 class="w3-padding-32" style="">
+                Embedded within HTML, JavaScript is interpreted by the web browser. A JavaScript program can control document content and its appearance, interacting with the HTML source code and the browser functions. It makes use of the user interface mechanisms already in HTML to interact with users of the web document. It can manipulate embedded images, but cannot produce graphical displays. It should not read or write files, except in using cookies as permitted by the web browser. It can access other web documents using the Uniform Resource Locator (URL) , but it cannot make network connections on its own.
+            </h5>
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+<!-- OOP? -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+    
+
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Javascript libraries</h1>
+            <h5 class="w3-padding-32">
+                A JavaScript library is a library of pre-written JavaScript which allows for easier development of JavaScript-based applications, especially for AJAX and other web-centric technologies.
+            </h5>
+
+           
+        </div>
+    </div>
+</div>
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px 50px 0px">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>JQUERY</h1>
+            <h5 class="w3-padding-32" style="">
+                jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+            </h5>
+
+            
+        </div>
+
+        
+    </div>
+</div>
+
+<!-- IDE? -->
+<div class="w3-row-padding w3-container left-margin"  style="padding:10px 0px 50px 0px">
+    <div class="w3-content">
+       
+
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Which IDE to use for Java?</h1>
+            <h5 class="w3-padding-32">Java, like all other languages, doesn't require an IDE. You can start
+            programming in a text file. However, unless you can remeber every line of code from all the libraries,
+            using an IDE is the best way to go. In class, you will be using NetBeans. It is a very good IDE, but it 
+            is not the only one out there. Java is also used to create Android applications which brings more IDE's to <a target="_blank" href="https://blog.idrsolutions.com/2015/03/the-top-11-free-ide-for-java-coding-development-programming/">choose</a> from.</h5>
+
+        
+        </div>
+        
+         <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="netbeans-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">NetBeans</p>
+                <img class="img" src="resources/netbeans-logo.png">
+                
+
+            </div>
+        </div>
+        
+        
+        
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="eclipse-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">Eclipse</p>
+                <img class="img" src="resources/eclipse-logo.png">
+                
+
+            </div>
+        </div>
+        
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="intellij-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">IntelliJ</p>
+                <img class="img" src="resources/intellij-logo.png">
+                
+
+            </div>
+        </div>
+        
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="bluej-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">BlueJ</p>
+                <img class="img" src="resources/bluej-logo.png">
+            </div>
+        </div>
+        
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="jdev-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">BlueJ</p>
+                <img class="img" src="resources/jdev-logo.png">
+            </div>
+        </div>
+        
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="androidstudio-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">Android Studio</p>
+                <img class="img" src="resources/androidstudio-logo.png">
+                
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Scene Builder -->
+<div class="w3-row-padding w3-container left-margin" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+    
+
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Scene Builder</h1>
+            <h5 class="w3-padding-32">Scene Builder is an addon for JavaFX which allows the programmer to create the GUI
+            wihout the need to program it by hand. It utilizes a drag and drop interface which generates the XML code needed to run
+            automatically. </h5>
+            <!--<a class="w3-padding-32" href="https://developer.android.com/index.html">Google Developer Website</a>-->
+
+        <div class="w3-third w3-center img-con image-padding">
+            <div class="img-trans-cyan box" id="scenebuilder-id">
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">Scene Builder</p>
+                <img class="img" src="resources/scenebuilder-logo.png">
+                
+
+            </div>
+        </div>
+            
+           
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center left-margin">
+   
+    <p>Created by the Students</p>
+</footer>
+
+
+
+</body>
+</html>

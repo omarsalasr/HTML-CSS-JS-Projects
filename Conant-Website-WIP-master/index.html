@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto+Mono" rel="stylesheet">
+
+<title>Conant Comp Science</title>
+<link rel="icon" href="resources/logo.png">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index:200!important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myScript.js"></script>
+<link rel="stylesheet" href="css/mainPageStyle.css">
+<style>
+    @media (max-width: 600px){
+        .quote{
+            font-size:15px!important;
+            line-height:20px!important;
+        }
+        .img-padding-right{
+            padding:20px 0px; 
+        }
+        .img-padding-left{
+            padding:20px 0px;
+        }
+        .container-padding{
+            padding:20px 0px;
+        }  
+    }
+    @media (min-width: 601px){
+        .par-padding{
+            padding:16px 32px;
+        }
+        .img-padding-right{
+            padding:10px 20px 0px 0px; 
+        }
+        .img-padding-left{
+            padding:10px 0px 0px 20px;
+        }
+        .container-padding{
+            padding:10px 0px 25px 0px;
+        }  
+    }
+    
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;">
+    <div class="w3-bar w3-card-2 w3-right w3-large" style="background-color: rgb(65,209,175)">
+        <p class="w3-bar-item w3-left-align bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>
+        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>
+       
+        <!--<div class="dropdown w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">-->
+        <!--    <span>Mouse over me</span>-->
+        <!--    <div class="dropdown-content">-->
+        <!--        <p>Hello World!</p>-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+        <a href="#java-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Java</a>
+        <a href="#princ-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>
+        <a href="#vb-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="#vb-section" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+        <a href="#princ-section" class="w3-bar-item w3-button w3-padding-large">Principles</a>
+        <a href="#java-section" class="w3-bar-item w3-button w3-padding-large">Java</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">AP Review</a>
+        <!--<div class="dropdown w3-bar-item w3-button w3-padding-large">-->
+        <!--    <span>Mouse over me</span>-->
+        <!--    <div class="dropdown-content">-->
+        <!--        <p>Hello World!</p>-->
+        <!--    </div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+<!-- Header -->
+<div class="background">
+    <header class="w3-container w3-center" style="padding:60px 16px; background-color: rgba(255,255,255,0.5)">
+
+        <!--<img class="background-image" src="resources/backg.png" >-->
+
+        <p class="w3-margin header-title" style="line-height: 60px;color:black;z-index:1;">Welcome</p>
+        <p class="quote" style=""><i>"There are 10 types of people in this world, those who understand binary and those who don't"</i></p>
+        <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
+
+    <form>
+        <!--<div style="width: 130px;margin:auto;">-->
+          <input class="input-search" type="text" name="search" style="" placeholder="Search..." >
+          <!--<i class="fa fa-search" style="font-size:24px"></i>-->
+        <!--</div>-->
+        
+    </form>
+    
+    </header>
+</div>
+
+<!-- VB -->
+<div class="w3-row-padding w3-container container-padding" style="background-color: rgb(65,209,175);opacity: 1;" id="vb-section">
+    <div class="w3-content">
+        <div class="w3-twothird" style="text-align:center">
+            <h1>Visual Basic</h1>
+            <h5 class="par-padding" style="">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint-->
+                <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco-->
+                <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+
+        <div class="w3-third w3-center img-con img-padding-right">
+            <!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+            <div class="img-trans-white" id="vb-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-white"></p>
+                <p class="text-trans-white">Visual Basic</p>
+                <img class="img" src="resources/vb_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HTML -->
+<div class="w3-row-padding w3-container container-padding" id="princ-section" style="">
+    <div class="w3-content">
+        <div class="w3-third w3-center img-con img-padding-left">
+            <!--<i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>-->
+            <div class="img-trans-cyan" id="html-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">HTML</p>
+                <img class="img" src="resources/html_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+
+        <div class="w3-twothird" style="text-align:center">
+            <h1>HTML</h1>
+            <h5 class="par-padding">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  Excepteur sint-->
+                <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id eud exercitation ullamco-->
+                <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
+<div class="w3-row-padding  w3-container container-padding" style="background-color: rgb(65,209,175);">
+    <div class="w3-content">
+        <div class="w3-twothird" style="text-align:center">
+            <h1>CSS</h1>
+            <h5 class="par-padding" style="">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscint-->
+            <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit n ullamco-->
+            <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+
+        <div class="w3-third w3-center img-con img-padding-right">
+            <!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+            <div class="img-trans-white" id="css-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-white"></p>
+                <p class="text-trans-white">CSS</p>
+                <img class="img" src="resources/css_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<div class="w3-row-padding w3-container container-padding" style="">
+    <div class="w3-content">
+        <div class="w3-third w3-center img-con img-padding-left">
+            <!--<i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>-->
+            <div class="img-trans-cyan" id="js-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">JavaScript</p>
+                <img class="img" src="resources/js_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+
+        <div class="w3-twothird" style="text-align:center">
+            <h1>JavaScript</h1>
+            <h5 class="par-padding">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  Excepteur sint-->
+            <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id eud exercitation ullamco-->
+            <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+    </div>
+</div>
+
+<!-- Python -->
+<div class="w3-row-padding w3-container container-padding" style="background-color: rgb(65,209,175);">
+    <div class="w3-content">
+        <div class="w3-twothird" style="text-align:center">
+            <h1>Python</h1>
+            <h5 class="par-padding" style="">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscint-->
+            <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit n ullamco-->
+            <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+
+        <div class="w3-third w3-center img-con img-padding-right">
+            <!--<i class="fa fa-anchor w3-padding-64 w3-text-red"></i>-->
+            <div class="img-trans-white" id="python-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-white"></p>
+                <p class="text-trans-white">Python</p>
+                <img class="img" src="resources/python_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Java -->
+<div class="w3-row-padding w3-container container-padding" id="java-section" style="">
+    <div class="w3-content">
+        <div class="w3-third w3-center img-con img-padding-left">
+            <!--<i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>-->
+            <div class="img-trans-cyan" id="java-id">
+                <!--<a href="" class="list_button" style="position: relative; display: inline-block;">-->
+                <p class="background-trans-cyan"></p>
+                <p class="text-trans-cyan">Java</p>
+                <img class="img" src="resources/java_logo.png">
+                <!--</a>-->
+
+            </div>
+        </div>
+
+        <div class="w3-twothird" style="text-align:center">
+            <h1>Java</h1>
+            <h5 class="par-padding">References to topics that have been covered throughout the class can be found here</h5>
+
+            <!--<p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  Excepteur sint-->
+            <!--occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id eud exercitation ullamco-->
+            <!--laboris nisi ut aliquip ex ea commodo consequat.</p>-->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center">
+    <!--<div class="w3-xlarge w3-padding-32">-->
+        <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-instagram w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-twitter w3-hover-opacity"></i>-->
+        <!--<i class="fa fa-linkedin w3-hover-opacity"></i>-->
+    <!--</div>-->
+    <p>Created by the Students</p>
+</footer>
+
+
+
+</body>
+</html>

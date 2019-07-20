@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto+Mono" rel="stylesheet">
+
+<title>Conant Comp Sci</title>
+<link rel="icon" href="resources/logo.png">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myScript.js"></script>
+<link rel="stylesheet" href="../css/mainPageStyle.css">
+
+
+
+
+<body>
+    
+        <!--<div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;margin-top:19px;padding-top:25px;padding-bottom:40px;display:block;left:-300px" id="mySidebar">-->
+    <!--    <a href="Java.html" class="w3-bar-item w3-button active-cyan hover-cyan">Java</a>-->
+    <!--    <a href="Java/JavaOutput.html" class="w3-bar-item w3-button hover-cyan">Output</a><!-- maybe NetBeans -->-->
+    <!--    <a href="Java/JavaVariables.html" class="w3-bar-item w3-button hover-cyan">Variables</a>-->
+    <!--    <a href="Java/JavaConditionals.html" class="w3-bar-item w3-button hover-cyan">Conditionals</a>-->
+    <!--    <a href="Java/JavaJOP.html" class="w3-bar-item w3-button hover-cyan">JOP</a>-->
+    <!--    <a href="Java/JavaOperators.html" class="w3-bar-item w3-button hover-cyan">Operators</a>-->
+    <!--    <a href="Java/JavaMethods.html" class="w3-bar-item w3-button hover-cyan">Methods</a>-->
+    <!--    <a href="Java/JavaInstanceFields.html" class="w3-bar-item w3-button hover-cyan">Instance Fields</a>-->
+    <!--    <a href="Java/JavaParameters.html" class="w3-bar-item w3-button hover-cyan">Parameters</a>-->
+    <!--    <a href="Java/JavaCasting.html" class="w3-bar-item w3-button hover-cyan">Casting</a>-->
+    <!--    <a href="Java/JavaObjects.html" class="w3-bar-item w3-button hover-cyan">Objects</a>-->
+    <!--    <a href="Java/JavaRectangleClass.html" class="w3-bar-item w3-button hover-cyan">Rectangle Class</a>-->
+    <!--    <a href="Java/JavaStringClass.html" class="w3-bar-item w3-button hover-cyan">String Class</a>-->
+    <!--    <a href="Java/JavaBooleans.html" class="w3-bar-item w3-button hover-cyan">Booleans</a><!-- should include end of Q1?-->-->
+        
+    <!--    <a href="Java/JavaLoops.html" class="w3-bar-item w3-button hover-cyan">Loops</a>-->
+    <!--    <a href="Java/JavaArray.html" class="w3-bar-item w3-button hover-cyan">Array</a>-->
+    <!--    <a href="Java/JavaArrayList.html" class="w3-bar-item w3-button hover-cyan">Array List</a>-->
+    <!--    <a href="Java/Java2DArray.html" class="w3-bar-item w3-button hover-cyan">2-D Arrays</a>-->
+    <!--    <a href="Java/JavaKeyPress.html" class="w3-bar-item w3-button hover-cyan">KeyPress</a><!-- should include end of Q1?-->-->
+        
+    <!--    <a href="Java/JavaSearching.html" class="w3-bar-item w3-button hover-cyan">Searching</a>-->
+    <!--    <a href="Java/JavaSorting.html" class="w3-bar-item w3-button hover-cyan">Sorting</a>-->
+    <!--    <a href="Java/JavaIO.html" class="w3-bar-item w3-button hover-cyan">Input and Output</a>-->
+    <!--    <a href="Java/JavaInheritance.html" class="w3-bar-item w3-button hover-cyan">Inheritance</a>-->
+    <!--    <a href="Java/JavaPolymorphism.html" class="w3-bar-item w3-button hover-cyan">Polymorphism</a>-->
+    <!--    <a href="Java/JavaEncapsulation.html" class="w3-bar-item w3-button hover-cyan">Encapsulation</a>-->
+    <!--    <a href="Java/JavaInterface.html" class="w3-bar-item w3-button hover-cyan">Interface</a>-->
+        <!--<a href="../Java/JavaNetworking" class="w3-bar-item w3-button">Networking</a>-->
+    <!--    <a href="Java/JavaAPMC.html" class="w3-bar-item w3-button hover-cyan">AP MC</a>-->
+    <!--    <a href="Java/JavaAPFRQ.html" class="w3-bar-item w3-button hover-cyan">AP FRQ's</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+    <!--</div>-->
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;text-align:center">
+
+    <div class="w3-bar w3-card-2 w3-right w3-large " style="background-color: rgb(65,209,175);text-align:center!important">
+        <button class="w3-bar-item w3-button w3-align-left w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" id="sidebar-button" onclick="w3_open()"><i class="fa fa-angle-double-right" id="sidebar-icon" aria-hidden="true"></i></button>
+
+        <p class="w3-bar-item bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>
+        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Java</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>
+        <a href="../index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-padding-large">Principles</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-padding-large">Java</a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-padding-large">AP Review</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="">
+    <header class="w3-container w3-center " style="padding:60px 16px 11px; background-color: rgba(255,255,255,0.5)">
+
+        <!--<img class="background-image" src="resources/backg.png" >-->
+
+        <p class="w3-margin header-title"  style="line-height: 60px;color:black;z-index:1;">AP Java Review</p>
+        <!--<p class="quote" style=""><i>"There are 10 types of people in this world, those who understand binary and those who don't"</i></p>-->
+        <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
+
+    <!--<form>-->
+        <!--<div style="width: 130px;margin:auto;">-->
+    <!--      <input class="input-search" type="text" name="search" style="" placeholder="Search..." >-->
+          <!--<i class="fa fa-search" style="font-size:24px"></i>-->
+        <!--</div>-->
+        
+    <!--</form>-->
+    
+    </header>
+</div>
+
+<!--  -->
+<div class="w3-row-padding w3-container" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>About the test</h1>
+            <!--<h5 class="w3-padding-32" style="">Java is a programming language which is used all over the world.-->
+            <!--According to <a target="_blank" href="https://go.java/index.html">Java's website</a>, over <strong>5 million</strong> students study Java, there are <strong>10 million</strong> Java developers worldwide,-->
+            <!--and over <strong>15 billion</strong> devices run Java.</h5>-->
+            
+            <h5 class="w3-padding-32" style="">The Advanced Placement Computer Science A test is the fastest growing of all AP courses. The test 
+            includes the development and analysis of algorithms and fundamental data structures, and the use of logic and formal methods. Out of ~50,000
+            students who took the test in 2016, 20.7% scored a 5 and 64.3% scored a 3 or higher.</h5>
+
+     
+        </div>
+
+        
+    </div>
+</div>
+
+<!--  -->
+<div class="w3-row-padding w3-container" style="padding:10px 0px 50px 0px">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:left">
+            <h1>Test Format</h1>
+            <!--<h5 class="w3-padding-32" style="">-->
+            <!--    </h5>-->
+            
+            
+            <ul class="list-header">
+                <li>Multiple Choice Exam</li>
+                <ul class="list-sub-header">
+                    <li>There are 40 Multiple Choice questions</li>
+                    <li>Total of 1 hour and 30 minutes given to complete</li>
+                </ul>
+                <li>Free Response Question Exam</li>
+                <ul class="list-sub-header">
+                    <li>There are 4 Free Response Questions questions</li>
+                    <li>Each question has multiple parts to them</li>
+                    <li>Total of 1 hour and 30 minutes given to complete</li>
+                </ul>
+            </ul>
+            
+        </div>
+
+        
+    </div>
+</div>
+
+<!--  -->
+<div class="w3-row-padding w3-container" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:left">
+            <h1>Tips and Tricks</h1>
+            
+            
+            <!--<h5 class="w3-padding-32" style=""></h5>-->
+            
+            <ul class="list-header">
+                <li>General Tips</li>
+                <ul class="list-sub-header">
+                    <li>Get a good night's sleep before the exam</li>
+                    <li>Complete old AP test for extra practice</li>
+                    <li>The longer questions usually are towards the end</li>
+                    <li>You can write all over the test booklet</li>
+                    <li>Quick reference page is not very useful when you are running out of time</li>
+                    <li>Read and re-read all the note packets and annotate them until you fully understand key concepts</li>
+                    <li>Do not be afraid to ask for help before the AP test</li>
+                </ul>
+                <li>Multiple Choice</li>
+                <ul class="list-sub-header">
+                    <li>Bring multiple pencils for multiple choice</li>
+                    <li>Make sure you have dull tip pencils, not mechanical or sharp</li>
+                    <li>Know when to guess</li>
+                    <li>If you can eliminate one or two of the choices, the odds are in your favor</li>
+                    <li>Don't waste time on a problem that you are stuck on, move on to the next one</li>
+                    <li>Check the output and look for the necessary lines that get you to that output</li>
+                    <li>Read all of the answers before making your final decision</li>
+                    <li>Trace the lines of code given, only if you have time</li>
+                    <li>Check for loops that never execute or infinite loops</li>
+                    <li>Check for nested if statements, sometimes they never execute</li>
+                    <li>Be careful of instance variables vs local variables</li>
+                    <li>You must know Demorgan’s law, it will be on the test</li>
+                    <li>Recursion questions are simple, they are the easy point</li>
+                    <li>When there are no braces around a condition or loop, the next line will be the only one that will execute as part of the condition</li>
+                </ul>
+                <li>Free Response Questions</li>
+                <ul class="list-sub-header">
+                    <li>You don’t need to memorize any specific pieces of code, the AP test uses basic Java libraries</li>
+                    <li>You can use any writing utencil to complete this portion of the test</li>
+                    <li>There is a lot of partial credit</li>
+                    <li>Make sure you have answered what the problem asks</li>
+                    <ul class="list-sub-header">
+                        <li>Underline key words</li>
+                        <li>You WILL NOT receive full credit if you don’t use the methods from a previous part of the same problem</li>
+                        <li>Reread the problem definition after you think you've finished writing the code, paying close attention to the details you marked</li>
+                        <li>Pre-conditions are the requirements needed for the method to work correctly, take them in full consideration</li>
+                        <li>Post-conditions are the end result, the output, of the method</li>
+                        <li>If you have time, trace your code to make sure you get the desired output</li>
+                    </ul>
+                    <li>Aim for clarity in your programming</li>
+                    <ul class="list-sub-header">
+                        <li>Organize, indent, assign meaningful variable names</li>
+                        <li>Make sure to put the "private" keyword in front of all instance fields</li>
+                        <li>Write neatly so the graders have an easier time reading your code</li>
+                    </ul>
+                    <li>If you know how to do a small portion of the problem, write that code down</li>
+                    <li>There is partial credit for having correct loops with no error</li>
+                    <li>Write the correct header for any class or method to get easy points</li>
+                    <li>No credit is given for writing a description of what you would do if you had time</li>
+                    <li>Don't waste time erasing, <strike>draw a line</strike> through the lines you don't want to be graded</li>
+                    <li>Never copy the headers that are written for you already</li>
+                    <li>Don't panic if you run out of room to write</li>
+                    <ul class="list-sub-header">
+                        <li>Find a blank page and continue your code</li>
+                        <li>Indicate clearly what you've done, both on the page where you started the response and on the page where you continued writing</li>
+                    </ul>
+                    <li>Avoid using classes that aren't part of the standard Java library</li>
+                    <li>Don't forget the properties of interfaces</li>
+                    <li>Remember the requirements for a super class and any sub class</li>
+                    <li>Do not destroy or modify data was given, make a copy and modify if needed</li>
+                </ul>
+            </ul>
+
+     
+        </div>
+
+        
+    </div>
+</div>
+
+<!--  -->
+<div class="w3-row-padding w3-container" style="padding:10px 0px 50px 0px">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:center">
+            <h1>Practice Quiz</h1>
+            <!--<h5 class="w3-padding-32" style="">-->
+            <!--    <a target="_blank" href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a">Official College Board Website</a><br><br>-->
+            <!--    <a target="_blank" href="http://media.collegeboard.com/digitalServices/pdf/ap/ap-course-overviews/ap-computer-science-a-course-overview.pdf">Course Overview</a><br><br>-->
+            <!--    <a target="_blank" href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/exam-practice">Practice Free Response Questions</a>-->
+            <!--</h5>-->
+            
+            
+            <div class="quizz-container" data-width="100%" data-iframe-title="QUIZ: AP Java Quiz" data-height="auto" data-quiz="407963"></div>
+<script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>
+            
+        </div>
+
+        
+    </div>
+</div>
+
+
+<!--  -->
+<div class="w3-row-padding w3-container" style="padding:10px 0px;background-color: rgb(65,209,175);opacity: 1;">
+    
+    
+    <div class="w3-content">
+        <div class="w3-twothird text-paragraph" style="text-align:left">
+            <h1>External Sources</h1>
+            <h5 class="w3-padding-32" style="">
+                <a target="_blank" href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a">Official College Board Website</a><br><br>
+                <a target="_blank" href="http://media.collegeboard.com/digitalServices/pdf/ap/ap-course-overviews/ap-computer-science-a-course-overview.pdf">Course Overview</a><br><br>
+                <a target="_blank" href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a/exam-practice">Practice Free Response Questions</a>
+            </h5>
+            
+            
+<!--            <div class="quizz-container" data-width="100%" data-iframe-title="QUIZ: AP Java Quiz" data-height="auto" data-quiz="407963"></div>-->
+<!--<script src="//dcc4iyjchzom0.cloudfront.net/widget/loader.js" async></script>-->
+            
+        </div>
+
+        
+    </div>
+</div>
+
+<!-- Content -->
+<!--<div class="w3-row-padding w3-container container-padding" id="" style="">-->
+<!--    <div class="w3-content">-->
+        <!--Stuff goes in here-->
+       
+        
+<!--    </div>-->
+    
+<!--    <div style="padding-left:20px">-->
+<!--        <a href="../Java/JavaInterface.html" ><button class="prev-button">Back</button></a>-->
+        <!--<a href="../Java/JavaAPFRQ.html"><button class="next-button" href="">Next</button></a>-->
+<!--    </div>-->
+
+<!--</div>-->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center left-margin">
+   
+    <p>Created by the Students</p>
+</footer>
+
+
+
+</body>
+</html>

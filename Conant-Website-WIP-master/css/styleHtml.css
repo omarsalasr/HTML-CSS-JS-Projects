@@ -1,0 +1,161 @@
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    border:0;
+}
+.content{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.content_title{
+    font-size:60px;
+    padding:20px;
+}
+
+/*.content ul{*/
+/*    width: 100%;*/
+/*  display: table;*/
+/*  table-layout: fixed;*/
+/*}*/
+/*.content img{*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*}*/
+/*.content a{*/
+/*    width:100%;*/
+/*    height:100%;*/
+    
+/*}*/
+/*.content ul li {*/
+/*    margin:0;*/
+/*    display: inline-block;*/
+/*    width: 40%;*/
+/*    height: auto;*/
+/*    text-align: center;*/
+/*    vertical-align: middle;*/
+/*}*/
+#navTitle{
+    color: black;
+    font-size:30px;
+    margin:0;
+}
+#navImage{
+    width: 100%;
+    height: inherit;
+    /*height: 500px;*/
+    position: fixed;
+    z-index: -10;
+    
+    /*background-attachment: fixed;*/
+}
+#navHome,#navIntro,#navPrinciples,#navJava {
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin:0;
+    color: black;
+}
+#navHome:hover, #navIntro:hover, #navJava:hover, #navPrinciples:hover {
+    background-color: rgb(65,209,175);
+}
+.content_title{
+    font-size:60px;
+    padding:20px;
+    /*margin-bottom:50px;*/
+    /*line-height:60px;*/
+}
+
+
+.mainTitle{
+    /*font: normal 40px / 77.28px Bravo, Arial, sans-serif;*/
+    font-family: Bravo;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+#foot{
+    opacity: 0.95;
+    text-align: center;
+    margin: auto;
+    padding-top:15px;
+    background-color: red;
+    color: white;
+}
+.footer {
+    
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+@media (max-width: 767px) {
+    /*#navHome{*/
+    /*    border-top: 0px;*/
+    /*}*/
+    #navTitle{
+        font-size: 18px;
+    }
+    
+    .mainTitle{
+        margin-top: 25vh;
+        text-align: center;
+        font-family: Bravo;
+    }
+
+
+    #navHome,#navIntro,#navPrinciples,#navJava {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    color: black;
+    /*border-top: 1px solid white;*/
+    margin: auto;
+    }
+
+
+}
+
+@font-face {
+    font-family: Bravo; /*a name to be used later*/
+    src: url('resources/BravoSC.otf'); /*URL to font*/
+}
+table, th,td{
+    border: 2px solid black;
+}
+th{
+    background-color: aqua;
+}
+td{
+    background-color: crimson;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+.one{
+    
+}

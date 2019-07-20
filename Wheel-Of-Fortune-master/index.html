@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheel of Fortune</title>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+
+    <script src="myJS.js"></script>
+
+</head>
+<body>
+    <button type="button" id="btnStart" onclick="start()">Begin Game</button>
+
+
+    <figure>
+        <img id="img" src="resources/wheel%20images/wheel01.jpg" height="250" width="250" align="center" style="display: none">
+    </figure>
+
+    <table id="tableInfo" hidden="true">
+        <tr>
+            <th>Player Name</th>
+            <th>Player Money</th>
+        </tr>
+        <tr>
+            <td id="p1"></td>
+            <td id="p1M"></td>
+        </tr>
+        <tr>
+            <td id="p2"></td>
+            <td id="p2M"></td>
+        </tr>
+        <tr>
+            <td id="p3"></td>
+            <td id="p3M"></td>
+        </tr>
+    </table>
+    <br>
+    <button id="btnSpin" style="display: none" type="button" onclick="spin()">Spin the wheel</button>
+
+
+    <table id="btns" hidden="true">
+        <tr>
+            <td>
+                <button id="btnLetter" onclick="guessL()" type="button">Guess a Letter</button>
+            </td>
+            <td>
+                <button id="btnWord" onclick="guessW()" type="button">Guess the word</button>
+            </td>
+            <td>
+                <button id="btnBuy" onclick="buyVowel()" type="button">Buy vowel</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <p style="color: black;font-size: 50px;text-align: center;" id="word"></p>
+
+
+
+</body>
+</html>

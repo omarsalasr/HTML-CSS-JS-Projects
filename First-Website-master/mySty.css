@@ -1,0 +1,58 @@
+
+div.box {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1em solid blue;
+    float: left;
+    background-color: white;
+    border-image: url(selection.gif);
+    
+
+}
+
+h1{
+	margin-left: auto;
+} 
+
+div.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    border: 1em solid blue;
+    margin-top: 50px;
+    
+}
+
+table,td,tr,th{
+
+    table-layout: fixed;
+    border: 5px solid blue;
+    border-spacing: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+}
+
+
+
+p.par{
+    font-size: 150%;
+    margin-top: 50px;
+    text-align: center;
+    width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: dotted;
+    border-color: blue;
+    background-color: white;
+    font-style: italic; 
+    font-family: "courier";
+
+
+}
+
+div.write{
+    text-align: right;
+}

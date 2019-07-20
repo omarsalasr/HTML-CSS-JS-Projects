@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto+Mono" rel="stylesheet">
+
+<title>Conant Comp Sci</title>
+<link rel="icon" href="resources/logo.png">
+<style>
+    
+</style>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myScript.js"></script>
+<link rel="stylesheet" href="../css/mainPageStyle.css">
+
+
+
+
+<body>
+    
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;margin-top:25px;padding-top:25px;padding-bottom:40px;display:block;left:-300px" id="mySidebar">
+        <a href="../Java.html" class="w3-bar-item w3-button hover-cyan">Java</a>
+        <a href="../Java/JavaOutput.html" class="w3-bar-item w3-button hover-cyan">Output</a><!-- maybe NetBeans -->
+        <a href="../Java/JavaVariables.html" class="w3-bar-item w3-button hover-cyan">Variables</a>
+        <a href="../Java/JavaConditionals.html" class="w3-bar-item w3-button hover-cyan active-cyan">Conditionals</a>
+        <a href="../Java/JavaJOP.html" class="w3-bar-item w3-button hover-cyan">JOP</a>
+        <a href="../Java/JavaOperators.html" class="w3-bar-item w3-button hover-cyan">Operators</a>
+        <a href="../Java/JavaMethods.html" class="w3-bar-item w3-button hover-cyan">Methods</a>
+        <a href="../Java/JavaInstanceFields.html" class="w3-bar-item w3-button hover-cyan">Instance Fields</a>
+        <a href="../Java/JavaParameters.html" class="w3-bar-item w3-button hover-cyan">Parameters</a>
+        <a href="../Java/JavaCasting.html" class="w3-bar-item w3-button hover-cyan">Casting</a>
+        <a href="../Java/JavaObjects.html" class="w3-bar-item w3-button hover-cyan">Objects</a>
+        <a href="../Java/JavaRectangleClass.html" class="w3-bar-item w3-button hover-cyan">Rectangle Class</a>
+        <a href="../Java/JavaStringClass.html" class="w3-bar-item w3-button hover-cyan">String Class</a>
+        <a href="../Java/JavaBooleans.html" class="w3-bar-item w3-button hover-cyan">Booleans</a><!-- should include end of Q1?-->
+        
+        <a href="../Java/JavaLoops.html" class="w3-bar-item w3-button hover-cyan">Loops</a>
+        <a href="../Java/JavaArray.html" class="w3-bar-item w3-button hover-cyan">Array</a>
+        <a href="../Java/JavaArrayList.html" class="w3-bar-item w3-button hover-cyan">Array List</a>
+        <a href="../Java/Java2DArray.html" class="w3-bar-item w3-button hover-cyan">2-D Arrays</a>
+        <a href="../Java/JavaKeyPress.html" class="w3-bar-item w3-button hover-cyan">KeyPress</a><!-- should include end of Q1?-->
+        
+        <a href="../Java/JavaSearching.html" class="w3-bar-item w3-button hover-cyan">Searching</a>
+        <a href="../Java/JavaSorting.html" class="w3-bar-item w3-button hover-cyan">Sorting</a>
+        <a href="../Java/JavaIO.html" class="w3-bar-item w3-button hover-cyan">Input and Output</a>
+        <a href="../Java/JavaInheritance.html" class="w3-bar-item w3-button hover-cyan">Inheritance</a>
+        <a href="../Java/JavaPolymorphism.html" class="w3-bar-item w3-button hover-cyan">Polymorphism</a>
+        <a href="../Java/JavaEncapsulation.html" class="w3-bar-item w3-button hover-cyan">Encapsulation</a>
+        <a href="../Java/JavaInterface.html" class="w3-bar-item w3-button hover-cyan">Interface</a>
+        <!--<a href="../Java/JavaNetworking" class="w3-bar-item w3-button">Networking</a>-->
+        <!--<a href="../Java/JavaAPMC.html" class="w3-bar-item w3-button hover-cyan">AP MC</a>-->
+        <!--<a href="../Java/JavaAPFRQ.html" class="w3-bar-item w3-button hover-cyan">AP FRQ's</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+    </div>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;text-align:center">
+
+    <div class="w3-bar w3-card-2 w3-right w3-large " style="background-color: rgb(65,209,175);text-align:center!important">
+        <button class="w3-bar-item w3-button w3-align-left w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" id="sidebar-button" onclick="w3_open()"><i class="fa fa-angle-double-right" id="sidebar-icon" aria-hidden="true"></i></button>
+
+        <p class="w3-bar-item bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>
+        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Java</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>
+        <a href="../index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-padding-large">Principles</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-padding-large">Java</a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-padding-large">AP Review</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="">
+    <header class="w3-container w3-center left-margin" style="padding:60px 16px 11px; background-color: rgba(255,255,255,0.5)">
+
+
+        <p class="w3-margin header-title"  style="line-height: 60px;color:black;z-index:1;">Conditionals</p>
+     
+     
+        
+     
+    </header>
+</div>
+
+<!-- Content -->
+<div class="w3-row-padding w3-container container-padding" id="" style="">
+    <div class="w3-content">
+        
+        <div class="text-padding">
+            <h2 style=""><strong>If Thens</strong></h2>
+        </div>
+        
+        <div class="text-padding">
+            <p>An if then is a tool that evaluates a logic statement. The basic premise is that it checks to see if the statement is true, and then uses the specified code.</p>
+            <p>In this example, the <font color="blue">if then</font> statement is checking that the variable y is equal to 1. if y is equal to 1 then program will use the system out statement. if, however, y is not equal to y, the program will not use the code below, and will continue to the next line.</p>
+        </div>
+        
+        <div class="text-padding" style="">
+            <img src="../resources/1111.PNG">
+        </div>
+        
+        <div class="text-padding" style="">
+            <p>You can also add a statement called an else, that allows you to chose between two different blocks of code depending on the result of the logic check.</p>
+        </div>
+        
+        <div class="text-padding" style="">
+            <img src="../resources/2222.PNG">
+        </div>
+        
+        <div class="text-padding">
+            <p>If y is equal to 1, then the program will output “yay”, if it is not equal to 1, it will output “nay”.</p>
+        </div>
+
+        <div class="text-padding">
+            <p>The last tool you can use is called an else if, which essentially allows you to pair two if thens together</p>
+        </div>
+        
+        <div class="text-padding" style="">
+            <img src="../resources/3333.PNG">
+        </div>
+        
+        <div class="text-padding">
+            <p>The same as always, if y is equal to 1 the program will output yay. If y is equal to 2 it will output maybe, and if it is neither 1 nor 2, it will output nay. One important thing to remember is that if both your if and your else if are true, only the code for the if will be used.</p>
+        </div>
+        
+    </div>
+    
+    
+
+</div>
+
+<!-- Content -->
+<div class="w3-row-padding w3-container container-padding" id="" style="">
+    <div class="w3-content">
+        <!--Stuff goes in here-->
+       
+        
+    </div>
+    
+    <div style="padding-left:20px">
+        <a href="../Java/JavaVariables.html" ><button class="prev-button">Back</button></a>
+        <a href="../Java/JavaJOP.html"><button class="next-button" href="">Next</button></a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center left-margin">
+   
+    <p>Created by the Students</p>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- Navbar -->
+<!--<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;">-->
+
+<!--    <div class="w3-bar w3-card-2 w3-right w3-large" style="background-color: rgb(65,209,175)">-->
+<!--        <button class="w3-bar-item w3-button w3-align-left w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" id="sidebar-button" onclick="w3_open()"><i class="fa fa-angle-double-right" id="sidebar-icon" aria-hidden="true"></i></button>-->
+
+<!--        <p class="w3-bar-item w3-left-align bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>-->
+<!--        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>-->
+<!--        <a href="#java-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Java</a>-->
+<!--        <a href="#princ-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>-->
+<!--        <a href="#vb-section" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>-->
+<!--        <a href="index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Home</a>-->
+<!--    </div>-->
+
+    <!-- Navbar on small screens -->
+<!--    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">-->
+<!--        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>-->
+<!--        <a href="#vb-section" class="w3-bar-item w3-button w3-padding-large">Intro</a>-->
+<!--        <a href="#princ-section" class="w3-bar-item w3-button w3-padding-large">Principles</a>-->
+<!--        <a href="#java-section" class="w3-bar-item w3-button w3-padding-large">Java</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-padding-large">AP Review</a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- Header -->
+<!--<a href="JavaVariables.html">-->
+<!--    <button class="btn1">Back</button>-->
+<!--</a>-->
+<!--<a href="">-->
+<!--    <button class="btn2" href="">Next</button>-->
+<!--</a>-->
+<!--<div>-->
+
+<!--    <header>-->
+
+        <!--<img class="background-image" src="resources/backg.png" >-->
+<!--        <h1 style="margin-bottom: 0px;padding-left: 15%; margin-top: 0%;font-size: 72px;"><u>Conditionals</u></h1>-->
+
+
+<!--    </header>-->
+<!--    <div class="box1">-->
+<!--        <h2 style="margin-bottom: 0%;padding-left: 15%;margin-top: 3%"><strong>If Thens</strong></h2>-->
+<!--    </div>-->
+<!--    <div style="margin-left: 14%; margin-top: 2%; padding-left: 1%;: 2px black solid; width: 45%; height: 10%">-->
+<!--        <p>An if then is a tool that evaluates a logic statement. The basic premise is that it checks to see if the statement is true, and then uses the specified code.-->
+<!--        </p>-->
+<!--        <p style="padding-top: 1%">In this example, the <font color="blue">if then</font> statement is checking that the variable y is equal to 1. if y is equal to 1 then program will use the system out statement. if, however, y is not equal to y, the program will not use the code below, and will continue to the next line.-->
+<!--        </p>-->
+<!--    </div>-->
+
+<!--</div>-->
+
+<!--<div class="box2" style="margin-left: 15%; margin-top: 3%">-->
+<!--    <img src="resources/1111.PNG">-->
+<!--</div>-->
+
+<!--<div class="box2" style="margin-left: 15%; margin-top: 3%">-->
+<!--    <p>You can also add a statement called an else, that allows you to chose between two different blocks of code depending on the result of the logic check.</p>-->
+<!--</div>-->
+
+<!--<div class="box2" style="margin-left: 15%; margin-top: 3%">-->
+<!--    <img src="resources/2222.PNG">-->
+<!--</div>-->
+
+
+<!--<div style="margin-left: 15%; margin-top: 3%">-->
+<!--    <p>If y is equal to 1, then the program will output “yay”, if it is not equal to 1, it will output “nay”.</p>-->
+<!--</div>-->
+
+<!--<div style="margin-left: 15%; margin-top: 3%">-->
+<!--    <p>The last tool you can use is called an else if, which essentially allows you to pair two if thens together</p>-->
+<!--</div>-->
+<!--<div class="box2" style="margin-left: 15%; margin-top: 3%">-->
+<!--    <img src="resources/3333.PNG">-->
+<!--</div>-->
+<!--<div style="margin-left: 15%; margin-top: 3%">-->
+<!--    <p>The same as always, if y is equal to 1 the program will output yay. If y is equal to 2 it will output maybe, and if it is neither 1 nor 2, it will output nay. One important thing to remember is that if both your if and your else if are true, only the code for the if will be used.</p>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="w3-container w3-padding-64 w3-center">-->
+<!--&lt;!&ndash;<div class="w3-xlarge w3-padding-32">&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-facebook-official w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-instagram w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-snapchat w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-pinterest-p w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-twitter w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;<i class="fa fa-linkedin w3-hover-opacity"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<p>Created by the Best</p>-->
+<!--</footer>-->
+
+
+
+<!--</body>-->
+<!--</html>-->

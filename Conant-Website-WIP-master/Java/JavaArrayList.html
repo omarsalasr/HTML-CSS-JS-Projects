@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Roboto+Mono" rel="stylesheet">
+
+<title>Conant Comp Sci</title>
+<link rel="icon" href="resources/logo.png">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/myScript.js"></script>
+<link rel="stylesheet" href="../css/mainPageStyle.css">
+
+
+
+
+<body>
+    
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;margin-top:25px;padding-top:25px;padding-bottom:40px;display:block;left:-300px" id="mySidebar">
+        <a href="../Java.html" class="w3-bar-item w3-button hover-cyan">Java</a>
+        <a href="../Java/JavaOutput.html" class="w3-bar-item w3-button hover-cyan">Output</a><!-- maybe NetBeans -->
+        <a href="../Java/JavaVariables.html" class="w3-bar-item w3-button hover-cyan">Variables</a>
+        <a href="../Java/JavaConditionals.html" class="w3-bar-item w3-button hover-cyan">Conditionals</a>
+        <a href="../Java/JavaJOP.html" class="w3-bar-item w3-button hover-cyan">JOP</a>
+        <a href="../Java/JavaOperators.html" class="w3-bar-item w3-button hover-cyan">Operators</a>
+        <a href="../Java/JavaMethods.html" class="w3-bar-item w3-button hover-cyan">Methods</a>
+        <a href="../Java/JavaInstanceFields.html" class="w3-bar-item w3-button hover-cyan">Instance Fields</a>
+        <a href="../Java/JavaParameters.html" class="w3-bar-item w3-button hover-cyan">Parameters</a>
+        <a href="../Java/JavaCasting.html" class="w3-bar-item w3-button hover-cyan">Casting</a>
+        <a href="../Java/JavaObjects.html" class="w3-bar-item w3-button hover-cyan">Objects</a>
+        <a href="../Java/JavaRectangleClass.html" class="w3-bar-item w3-button hover-cyan">Rectangle Class</a>
+        <a href="../Java/JavaStringClass.html" class="w3-bar-item w3-button hover-cyan">String Class</a>
+        <a href="../Java/JavaBooleans.html" class="w3-bar-item w3-button hover-cyan">Booleans</a><!-- should include end of Q1?-->
+        
+        <a href="../Java/JavaLoops.html" class="w3-bar-item w3-button hover-cyan">Loops</a>
+        <a href="../Java/JavaArray.html" class="w3-bar-item w3-button hover-cyan">Array</a>
+        <a href="../Java/JavaArrayList.html" class="w3-bar-item w3-button hover-cyan active-cyan">Array List</a>
+        <a href="../Java/Java2DArray.html" class="w3-bar-item w3-button hover-cyan">2-D Arrays</a>
+        <a href="../Java/JavaKeyPress.html" class="w3-bar-item w3-button hover-cyan">KeyPress</a><!-- should include end of Q1?-->
+        
+        <a href="../Java/JavaSearching.html" class="w3-bar-item w3-button hover-cyan">Searching</a>
+        <a href="../Java/JavaSorting.html" class="w3-bar-item w3-button hover-cyan">Sorting</a>
+        <a href="../Java/JavaIO.html" class="w3-bar-item w3-button hover-cyan">Input and Output</a>
+        <a href="../Java/JavaInheritance.html" class="w3-bar-item w3-button hover-cyan">Inheritance</a>
+        <a href="../Java/JavaPolymorphism.html" class="w3-bar-item w3-button hover-cyan">Polymorphism</a>
+        <a href="../Java/JavaEncapsulation.html" class="w3-bar-item w3-button hover-cyan">Encapsulation</a>
+        <a href="../Java/JavaInterface.html" class="w3-bar-item w3-button hover-cyan">Interface</a>
+        <!--<a href="../Java/JavaNetworking" class="w3-bar-item w3-button">Networking</a>-->
+        <!--<a href="../Java/JavaAPMC.html" class="w3-bar-item w3-button hover-cyan">AP MC</a>-->
+        <!--<a href="../Java/JavaAPFRQ.html" class="w3-bar-item w3-button hover-cyan">AP FRQ's</a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+        <!--<a href="#" class="w3-bar-item w3-button"></a>-->
+    </div>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: rgb(65,209,175);z-index: 100!important;text-align:center">
+
+    <div class="w3-bar w3-card-2 w3-right w3-large " style="background-color: rgb(65,209,175);text-align:center!important">
+        <button class="w3-bar-item w3-button w3-align-left w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" id="sidebar-button" onclick="w3_open()"><i class="fa fa-angle-double-right" id="sidebar-icon" aria-hidden="true"></i></button>
+
+        <p class="w3-bar-item bar-title" style="" id="nav-title"><strong>Conant Computer Science</strong></p>
+        <a class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" style="padding: 12px!important;" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">AP Review</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-white bar-tab">Java</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Principles</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Intro</a>
+        <a href="../index.html" class="w3-bar-item w3-button w3-right w3-hide-small w3-padding-large w3-hover-white bar-tab">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="nav-dropdown" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="../Vb.html" class="w3-bar-item w3-button w3-padding-large">Intro</a>
+        <a href="../Html5.html" class="w3-bar-item w3-button w3-padding-large">Principles</a>
+        <a href="../Java.html" class="w3-bar-item w3-button w3-padding-large">Java</a>
+        <a href="../APReview.html" class="w3-bar-item w3-button w3-padding-large">AP Review</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="">
+    <header class="w3-container w3-center left-margin" style="padding:60px 16px 11px; background-color: rgba(255,255,255,0.5)">
+
+        <!--<img class="background-image" src="resources/backg.png" >-->
+
+        <p class="w3-margin header-title"  style="line-height: 60px;color:black;z-index:1;">ArrayList</p>
+        <!--<p class="quote" style=""><i>"There are 10 types of people in this world, those who understand binary and those who don't"</i></p>-->
+        <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
+
+    <!--<form>-->
+        <!--<div style="width: 130px;margin:auto;">-->
+    <!--      <input class="input-search" type="text" name="search" style="" placeholder="Search..." >-->
+          <!--<i class="fa fa-search" style="font-size:24px"></i>-->
+        <!--</div>-->
+        
+    <!--</form>-->
+     
+    </header>
+</div>
+
+<!-- Content -->
+<div class="w3-row-padding w3-container container-padding" id="" style="">
+    <div class="w3-content">
+        <!--Stuff goes in here-->
+       
+        
+    </div>
+    
+    <div style="padding-left:20px">
+        <a href="../Java/JavaArray.html" ><button class="prev-button">Back</button></a>
+        <a href="../Java/Java2DArray.html"><button class="next-button" href="">Next</button></a>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center left-margin">
+   
+    <p>Created by the Students</p>
+</footer>
+
+
+
+</body>
+</html>

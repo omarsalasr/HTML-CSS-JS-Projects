@@ -1,0 +1,29 @@
+#img {
+    float: left;
+    width: 30%;
+}
+#btnStart{
+    display: block;
+    margin: auto;
+}
+#tableInfo{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    float: none;
+    height: 250px;
+}
+td,th{
+    border: 1px solid #dddddd;
+    height: 50px;
+    text-align: center;
+    vertical-align: inherit;
+}
+#btnSpin{
+    display: block;
+    margin: auto;
+}
+#btns{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
